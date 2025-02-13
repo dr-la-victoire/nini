@@ -2,7 +2,7 @@
 
 // Target for Valentine's Day
 const timer = setInterval(() => {
-  let valentinesDay = new Date("February 13, 2025 10:47:00");
+  let valentinesDay = new Date("February 14, 2025 09:00:00");
 
   // Today's date
   let now = new Date();
