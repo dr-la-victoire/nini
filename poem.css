@@ -6,7 +6,7 @@
 }
 
 .poem h2 {
-font-size: 2.5rem;
+  font-size: 2.5rem;
 }
 
 .poem p {
@@ -45,4 +45,65 @@ font-size: 2.5rem;
   border-radius: 5px;
   position: relative;
   transition: transform 0.2s;
+}
+
+/* RESPONSIVE DESIGN STARTED 12:33PM */
+/* REALLY SMALL SCREENS */
+@media (max-width: 320px) {
+  .poem {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 3em;
+    margin-right: -3em;
+    gap: 10px;
+  }
+
+  .button-container button {
+    width: 65%;
+  }
+}
+
+/* SMALL SCREENS */
+@media (min-width: 320px) and (max-width: 400px) {
+  .poem {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 5em;
+    margin-right: -3em;
+    gap: 10px;
+  }
+
+  .button-container button {
+    width: 65%;
+  }
+}
+
+/* LARGER SCREENS */
+@media (min-width: 400px) and (max-width: 650px) {
+  .poem {
+    width: 100%;
+    font-size: 0.7rem;
+  }
+
+  .button-container {
+    flex-direction: column;
+    margin-top: 0;
+    margin-left: 7em;
+    margin-right: -3em;
+    gap: 10px;
+  }
+
+  .button-container button {
+    width: 65%;
+  }
 }

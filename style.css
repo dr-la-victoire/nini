@@ -1,6 +1,11 @@
 /* IMPORTING THE FONT */
 @import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+html,
+body {
+  overflow: hidden;
+}
+
 /* THE SPECIAL BACKGROUND IMAGE FOR THE OCCASION */
 body {
   background-image: url("./images/valentine.jpg");
