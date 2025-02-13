@@ -47,6 +47,35 @@ body {
   border-radius: 10px;
 }
 
+/* BUTTON FOR POEM DISPLAY */
+.countdown-timer button {
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    transform 0.2s ease-in-out,
+    background-color 0.3s;
+  animation: pulse 1.5s infinite alternate ease-in-out;
+}
+
+.countdown-timer button:hover {
+  background-color: darkred;
+  transform: scale(1.1);
+}
+/* ZOOM EFFECT FOR THE BUTTON */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.05);
+  }
+}
+
 /* MEDIA QUERIES FOR DIFFERENT SCREEN SIZES */
 /* REALLY SMALL SCREENS */
 @media (max-width: 320px) {

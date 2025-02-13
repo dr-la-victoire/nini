@@ -1,14 +1,23 @@
 // This program runs a countdown to Valentine's Day!
 
 // Target for Valentine's Day
-setInterval(() => {
-  let valentinesDay = new Date("February 14, 2025 09:00:00");
+const timer = setInterval(() => {
+  let valentinesDay = new Date("February 13, 2025 10:47:00");
 
   // Today's date
   let now = new Date();
 
   // Doing the arithmetic
   let countDown = valentinesDay - now;
+
+  // condition for when the timer expires
+  if (countDown <= 0) {
+    clearInterval(timer);
+    document.querySelector(".countdown-timer").style.backgroundColor =
+      "transparent";
+    document.querySelector(".countdown-timer").innerHTML =
+      `<button onclick="window.location.href='poem.html'">Click Me!</button>`;
+  }
 
   // Conversions
   let seconds = Math.floor((countDown / 1000) % 60);
